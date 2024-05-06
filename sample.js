@@ -37,6 +37,13 @@ if (SUPPORTS_MEDIA_DEVICES) {
           });
   
         });
+        const btnoff = document.querySelector('.offswitch');
+        btnoff.addEventListener('click', function(){
+          track.applyConstraints({
+            advanced: [{torch: false}]
+          });
+  
+        });
       });
     });
   });
