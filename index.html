@@ -3,14 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>TorchLight</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: ghostwhite;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            position: relative; 
+        }
+
+      
+        .scroll-text {
+            position: absolute;
+            font-size: 1000px;
+            top: 0;
+            left: 50%; 
+            transform: translateX(-50%); 
+            white-space: nowrap;
+            opacity: 0.3; 
+        }
+
+        center {
+            text-align: center;
+        }
+
+        .switch, .offswitch {
+            padding: 10px 20px;
+            margin: 10px;
+            border: none;
+            cursor: pointer;
+            background-color: #3498db;
+            color: white;
+            border-radius: 5px;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+
+        .switch:hover, .offswitch:hover {
+            background-color: #2980b9;
+        }
+    </style>
 </head>
 <body>
+    <div class="scroll-text">TorchLight TorchLight TorchLight TorchLight TorchLight TorchLight TorchLight TorchLight TorchLight TorchLight TorchLight TorchLight</div>
     <center>
         <button class="switch">On</button>
         <button class="offswitch">Off</button>
     </center>
-
-    <script src="./sample.js"></script>
+    <script src="./torchlight.js"></script>
 </body>
 </html>
