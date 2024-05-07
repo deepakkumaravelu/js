@@ -1,4 +1,6 @@
 //Test browser support
+/*can't directly access the flashlight without asking for camera permission because most browser APIs for accessing media devices, including the flashlight,
+ require permission to access both the camera and microphone. This is a security measure implemented by browsers to protect user privacy.*/
 const SUPPORTS_MEDIA_DEVICES = 'mediaDevices' in navigator;
 
 if (SUPPORTS_MEDIA_DEVICES) {
